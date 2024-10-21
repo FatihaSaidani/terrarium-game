@@ -53,6 +53,7 @@ plants.forEach(plantId => {
   dragElement(document.getElementById(plantId));
 });
 
+// initialising reset button
 document.getElementById('resetButton').addEventListener('click', () => {
   plants.forEach(plantId => {
       const plant = document.getElementById(plantId);
