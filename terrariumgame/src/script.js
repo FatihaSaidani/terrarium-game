@@ -34,7 +34,7 @@ function elementDrag(e) {
 }
 
 
-// utilising Dom
+// utilising Dom to allow for the dragging to stop
 function stopElementDrag() {
   document.onpointerup = null;
   document.onpointermove = null;
@@ -53,7 +53,7 @@ plants.forEach(plantId => {
   dragElement(document.getElementById(plantId));
 });
 
-// initialising reset button
+// initialising reset button, returning plants to original position
 document.getElementById('resetButton').addEventListener('click', () => {
   plants.forEach(plantId => {
       const plant = document.getElementById(plantId);
